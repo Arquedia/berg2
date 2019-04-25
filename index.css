@@ -1,0 +1,128 @@
+a:visited {
+    color: #0056b3 !important;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    font-family: Lato, Arial, sans-serif;
+}
+
+.header {
+    flex-shrink: 0;
+    padding: 0;
+}
+
+.header > .nav {
+    padding: 0px 15px 0 15px;
+}
+
+.header > .tab-content {
+    padding: 5px 15px 10px 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.main {
+    padding: 0;
+    overflow-y: auto;
+}
+
+.field > label {
+    margin-left: .28571429rem;
+    font-size: .92857143em;
+    font-weight: 700;
+}
+
+table {
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #e9ecef;
+}
+
+.table-bordered thead th {
+    border-bottom-width: 1px;
+}
+
+#summary-table, #summary-table th {
+    border-top-width: 0px;
+}
+
+.table-sortable th {
+    background-color: #f9fafb;
+    padding: .5em .6em;
+}
+
+.table-sortable th {
+    cursor: pointer;
+}
+
+.table-sortable th.sorted, .table-sortable th:hover {
+    background-color: rgba(0,0,0,.05);
+}
+
+.table-sortable th::after {
+    font-family: FontAwesome;
+    opacity: .8;
+    margin: 0 0 0 .5em;
+}
+
+.table-sortable th.descending::after {
+    content: '\f0d7';
+}
+
+.table-sortable th.ascending::after {
+    content: '\f0d8';
+}
+
+.fa {
+    margin: 0 .25rem 0 0;
+    width: 1.18em;
+    text-align: center;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.rank-SSH, .rank-SH, .rank-SS, .rank-S, .rank-A, .rank-B, .rank-C, .rank-D, .rank-F, .rank-- {
+    display: inline-block;
+    margin: 0 .25rem 0 0;
+    width: 1.18em;
+    line-height: 0;
+    font-size: 1.1428571428571428em;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    text-shadow: black 2px 1px;
+}
+.rank-- {
+    font-weight: inherit;
+    font-style: normal;
+    text-shadow: none;
+}
+.rank-SSH:before, .rank-SS:before { content: 'SS'; }
+.rank-S:before, .rank-SH:before { content: 'S'; }
+.rank-A:before { content: 'A'; }
+.rank-B:before { content: 'B'; }
+.rank-C:before { content: 'C'; }
+.rank-D:before { content: 'D'; }
+.rank-F:before { content: 'F'; }
+.rank--:before { content: '-'; }
+.rank-SSH { color: silver; }
+.rank-SH { color: silver; }
+.rank-SS { color: gold; }
+.rank-S { color: gold; }
+.rank-A { color: limegreen; }
+.rank-B { color: blue; }
+.rank-C { color: purple; }
+.rank-D { color: darkred };
+.rank-F { color: black; }
